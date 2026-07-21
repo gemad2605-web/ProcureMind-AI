@@ -1,1 +1,75 @@
+# ============================================
+# متغيرات البيئة والأسرار
+# ============================================
+.env
+.env.local
+.env.*.local
+backend/.env
 
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ============================================
+# Node / Frontend
+# ============================================
+node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+.npm-global/
+
+# ============================================
+# بيانات التطبيق المحلية (لا تُرفع على Git)
+# ============================================
+data/uploads/*
+!data/uploads/.gitkeep
+
+data/cache/*
+!data/cache/.gitkeep
+
+data/exports/*
+!data/exports/.gitkeep
+
+data/logs/*.log
+!data/logs/.gitkeep
+
+data/backups/*
+!data/backups/.gitkeep
+
+# ============================================
+# فهرس FAISS (كبير الحجم / يُبنى محلياً)
+# ============================================
+faiss_index/*.faiss
+faiss_index/*.pkl
+faiss_index/file_mapping.json
+faiss_index/index_config.json
+
+# ============================================
+# ملفات النظام والمحررات
+# ============================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ============================================
+# Docker
+# ============================================
+*.log
+docker-compose.override.yml
